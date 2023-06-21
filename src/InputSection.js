@@ -3,18 +3,18 @@ import './InputSection.css';
 
 function InputSection() {
 
-  //const [header, setHeader] = useState('Hola Español!');
+  const [header, setHeader] = useState('Hola Español!');
 
   const spanishFlagClick = () => {
     // Kod do wykonania po kliknięciu
     console.log('Flaga Hiszpanii została kliknięta!');
-    //setHeader('Hola Español!')
+    setHeader('Hola Español!')
   };
 
   const englandFlagClick = () => {
     // Kod do wykonania po kliknięciu
     console.log('Flaga Wielkiej Brytanii została kliknięta!');
-    //setHeader('Hello English!')
+    setHeader('Hello English!')
   };
 
     return (
@@ -34,8 +34,7 @@ function InputSection() {
                       <button onClick={englandFlagClick} id="england" type="button" className="col-2 p-0 m-0 mx-auto"><img src="british.jpg" className="col-12" alt="English flag"/></button>
                     </div>
                     <textarea id="foreignArea" className="col-12"></textarea>
-                </div>
-                
+                </div>  
             </div>
             <input type="submit" className="btn btn-success col-6 col-sm-2 mx-auto" value="Zapisz"/>
           </form>
