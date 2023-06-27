@@ -1,3 +1,7 @@
 #flagDiv button img{
     max-height: 40px;
 }
+
+.halfOpacity {
+    opacity: 0.5;
+}
